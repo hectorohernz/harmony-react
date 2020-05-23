@@ -1,0 +1,172 @@
+.nav--bar-container{
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: white;
+    opacity: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    align-items: center;
+    z-index: 10;
+    box-shadow: 0 3px 3px -2px rgba(0,0,0,20);
+  }
+#logo{
+    height: 40px;
+}
+.moblie-nav-bar {
+    display: block;
+    position: fixed;
+    top: 70px;
+    right: 0;
+    left: -100;
+    height: 100%;
+    width: 50%;
+    background: #000000;
+    -webkit-transform: translate(100%);
+            transform: translate(100%);
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    z-index: 10;
+  }
+  
+  .moblie-nav-bar a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 32px;
+  }
+  
+  .moblie-nav-bar ul {
+    margin-top: 25px;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 80%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  
+  .moblie-nav-bar ul li {
+    margin: 25px 0px;
+  }
+  
+  .current {
+    border-bottom: 5px white dashed;
+  }
+  
+  .moblie__hover__nav:hover {
+    margin-left: 50px;
+    -webkit-transition: ease-in-out 1.5s;
+    transition: ease-in-out 1.5s;
+  }
+  
+  .expanded {
+    -webkit-transform: translate(0%);
+            transform: translate(0%);
+  }
+  
+  .moblie-hamburger-icon {
+    position: relative;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  
+  .bar {
+    position: absolute;
+    display: inline-block;
+    width: 25px;
+    height: 3px;
+    background: black;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  
+  .top {
+    top: calc((60px - 22px) / 2 + 0px);
+  }
+  
+  .middle {
+    top: calc((60px - 22px) / 2 + 10px);
+  }
+  
+  .bottom {
+    top: calc((60px - 22px) / 2 + 20px);
+  }
+  
+  .top, .middle, .bottom {
+    left: calc((60px - 30px) / 2);
+  }
+  
+  .hamburger-animate {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  
+  .top-animate {
+    -webkit-transform: translateY(10px) rotate(45deg);
+            transform: translateY(10px) rotate(45deg);
+  }
+  
+  .middle-animate {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  
+  .bottom-animate {
+    -webkit-transform: translateY(-10px) rotate(-45deg);
+            transform: translateY(-10px) rotate(-45deg);
+  }
+
+.moblie__nav__backdrop{
+  width: 100%;
+  position: absolute;
+  top: 70px;
+  background: rgb(0, 0, 0);
+  opacity: 80%;
+  z-index: 2;
+  height: 100vh;
+  display: block;
+}
+
+@media only screen and (min-width: 800px){
+  .nav--bar-container{
+    height: 70px;
+  }
+#logo{
+    height: 50px;
+}
+
+.moblie-hamburger-icon {
+  position: relative;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.bar {
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 5px;
+  background: black;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+}
