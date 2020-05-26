@@ -3,14 +3,17 @@ import React,{ Component} from 'react';
 export default class Header extends Component{
     constructor(props){
         super(props);
+        this.navBar = React.createRef();
         this.state = {
             navMenu:false,
-            styles:[]
+            styles:[],
+            shoppingChart: this.props.checkout,
+            navStyle:{display:'none'}
         };
         this.hamburgerMenu =  this.hamburgerMenu.bind(this);
         this.antiDisplay = this.antiDisplay.bind(this);
+        this.scrollDisplay =  this.scrollDisplay.bind(this);
     }
-
     hamburgerMenu(){
         this.setState({ styles: [
             'moblie__nav__backdrop'// Style for backdrop opticy className=".moblie-hamburger-icon"
@@ -20,17 +23,27 @@ export default class Header extends Component{
             , 'bottom-animate' // className='.bottom'
             , 'hamburger-animate' // className="..moblie-hamburger-icon"
         ], navMenu:true})
-
+      
         console.log('HAS WORKED')
     }
     antiDisplay(){
         this.setState({navMenu:false,styles:[]})
     }
             
+    scrollDisplay(){
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+         console.log('Cheese')
+        }else{
+            console.log('Chips')
+        }
+    }
+
     render() {
+        window.onscroll = this.scrollDisplay();
+
         return (
             <header> 
-                <nav className="nav--bar-container">
+                <nav className="nav--bar-container ">
                 <div className={`moblie-hamburger-icon  ${this.state.styles[5]}`} onClick={this.state.navMenu ?  this.antiDisplay : this.hamburgerMenu}>
                     <span className={`bar top ${this.state.styles[2]}`}></span>
                     <span className={`bar middle ${this.state.styles[3]}`}></span>

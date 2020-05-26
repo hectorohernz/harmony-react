@@ -1,0 +1,313 @@
+.home--dashboard{
+    height: 100vh;
+    padding-top: 70px;
+   display: flex;
+    flex-direction: column;
+    background: rgb(46, 39, 78);
+    color: white;
+    overflow: hidden;
+  }
+  .highlight-container{
+  display: flex;
+  padding: 0px 25px;
+  height: 300px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  }
+
+
+  .highlight-container button{
+    display: block;
+  }
+
+  .slide-btn{
+    position: sticky;
+    height: 100px;
+    font-size: 40px;
+    top: 30%;
+    z-index: 2;
+    background: transparent;
+    border: none;
+    color: white;
+    outline: none;
+  }
+  .slide-btn:hover{
+    color: rgb(146, 130, 221);
+  }
+  .left-slide{
+    right: 0px;
+    width: 100px;
+  }
+
+  .right-slide{
+    left: 0px;
+  }
+
+  .highlight-container figure{
+  height: 180px;
+  padding: 0px 50px;
+  display: flex;
+  flex-direction: column;
+  }
+  .home-text-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+  }
+  .home-text-container h1{
+  font-size: 70px;
+  margin-bottom: 25px;
+  text-align: center;
+  -webkit-text-fill-color: transparent; 
+  -webkit-text-stroke-width: 2px; 
+  letter-spacing: 2px;
+  color: rgb(208, 200, 240);
+  cursor: pointer;
+  }
+  
+  .moblie--header--image{
+  height: 200px;
+  }
+
+  #right-side-btn{
+  color: rgb(39, 24, 100);
+  background: rgb(170, 150, 245);
+  padding: 10px;
+  border-radius: 22px;
+
+  font-size: 20px;
+  text-decoration: underline;
+  }
+  
+  .moblie--header--image--text{
+    color: rgb(208, 200, 240);
+    font-size: 15px;
+    margin: 0px 0px;
+    text-align: center;
+  }
+  .moblie--header--image--text-2{
+    color: rgb(208, 200, 240);
+    font-size: 18px;
+    margin: 10px 0px;
+    text-align: center;
+  }
+ 
+  
+  .album--js--cover{
+  z-index: 2;
+  height: 100vh;
+  width: 100%;
+  background: black;
+  opacity: .94;
+  color: whitesmoke;
+  position: absolute;
+  padding-top: 25px;
+  top: 50px;
+  left: 0px;
+  display: none;/* Javascript Change*/
+  grid-template-columns: repeat(10,1fr);
+  grid-template-rows: repeat(10,1fr);
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: .3s;
+  text-align: center;
+  }
+  @keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: .94;
+  }
+  }
+  .js--btn-container{
+  grid-row:1;
+  grid-column: 1/ span 2;
+  margin: 25px 10px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  }
+  .js--btn{
+  display: inline-block;
+  height: 5px;
+  width: 40px;
+  background-color: white;
+  cursor: pointer;
+  }
+  .first--btn{
+  transform: rotate3d(-10, -10, 30, 40deg);
+  }
+  .second--btn{
+  position: absolute;
+  transform: rotate3d(0, -15, 50, -40deg);
+  }
+  
+  .album--js--artist{
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 30px;
+  grid-row: 2;
+  grid-column: 1/span 10;
+  }
+  .album--js--title{
+  grid-row: 3;
+  grid-column: 1/span 10;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 20px;
+  }
+  .album--js--image{
+  height: 240px;
+  grid-row: 6/span 3;
+  grid-column: 1/span 10;
+  margin: 0px auto;
+  }
+  .album--js--content{
+  grid-row: 4;
+  grid-column:3/span 6;
+  text-align: center;
+  line-height: 1.5em;
+  }
+  .album--js--btn{
+  grid-row: 5;
+  grid-column:3/span 6;
+  }
+  .album--js--btn{
+  grid-row: 5;
+  grid-column:3/span 6;
+  color: rgb(255, 140, 140);
+  text-align: center;
+  margin: 25px 0px;
+  font-size: 23px;
+  text-decoration: none;
+  } 
+  
+  
+  
+  
+  
+  @media only screen and (min-width: 800px){
+   .home-text-container h1{
+     font-size: 100px;
+   }
+   .home-text-container{
+     height: 300px;
+   }
+
+  .highlight-container{
+    margin-top: 50px;
+    height: 400px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+  }
+  .highlight-container button{
+    display: block;
+  }
+
+  .slide-btn{
+    position: sticky;
+    height: 100px;
+    font-size: 100px;
+    top: 30%;
+    z-index: 2;
+    background: transparent;
+    border: none;
+    color: white;
+    outline: none;
+  }
+  .slide-btn:hover{
+    color: rgb(146, 130, 221);
+  }
+  .left-slide{
+    right: 0px;
+    width: 100px;
+  }
+
+  .right-slide{
+    left: 0px;
+  }
+  .moblie--header--image{
+    height: 260px;
+  }
+    
+  .album--js--cover{
+    z-index: 2;
+    height: 100vh;
+    width: 100%;
+    background: black;
+    opacity: .94;
+    color: whitesmoke;
+    position: absolute;
+    padding-top: 25px;
+    top: 50px;
+    left: 0px;
+    display: none;/* Javascript Change*/
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(10,1fr);
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: .3s;
+    text-align: center;
+    }
+    .js--btn-container{
+    grid-row:1;
+    grid-column: 1/ span 2;
+    margin: 25px 10px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    }
+    .js--btn{
+    display: inline-block;
+    height: 5px;
+    width: 50px;
+    background-color: white;
+    cursor: pointer;
+    }
+    .album--js--artist{
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 30px;
+    grid-row: 2;
+    font-size: 50px;
+    grid-column: 1/span 10;
+    }
+    .album--js--title{
+    grid-row: 3;
+    grid-column: 1/span 10;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 35px;
+    }
+    .album--js--image{
+    height:300px;
+    grid-row: 6/span 3;
+    grid-column: 1/span 10;
+    margin: 0px auto;
+    }
+    .album--js--content{
+    grid-row: 4;
+    grid-column:3/span 6;
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 20px;
+    }
+    .album--js--btn{
+    grid-row: 5;
+    grid-column:3/span 6;
+    }
+    .album--js--btn{
+    grid-row: 5;
+    grid-column:3/span 6;
+    color: rgb(255, 140, 140);
+    text-align: center;
+    margin: 25px 0px;
+    font-size: 25px;
+    text-decoration: none;
+    } 
+  }

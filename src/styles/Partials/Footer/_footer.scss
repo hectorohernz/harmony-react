@@ -1,0 +1,161 @@
+.footer-container{
+    height: 70vh;
+    background: rgb(223, 223, 223);
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows:repeat(10,1fr);
+    overflow: hidden;
+}
+.about-harmony{
+    padding: 0px 25px;
+    grid-row: 1/span 2;
+    grid-column: 1/span 2;
+    margin-bottom: 25px;
+}
+.about-harmony h3{
+    padding: 15px 0px;
+}
+.show__less{
+    margin-bottom:20px ;
+    height: 100px;
+    overflow:hidden;
+}
+.about-harmony button{
+    margin: 5px 0px;
+    font-weight: 600;
+    padding: 8px;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    background: grey;
+}
+.show__more{
+    height: 200px;
+    margin-bottom:20px ;
+}
+.get--email {
+    height: 100px;
+    border-top: 1px solid grey ;
+    border-bottom: 1px solid grey ;
+    grid-row: 3/span 2;
+    grid-column: 1/span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+.get--email button{
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+}
+.get--email i{
+    font-size: 25px;
+    margin: 0px 5px;
+}
+.footer-social-links{
+    height: 100px;
+    border-bottom: 1px solid grey ;
+    grid-row: 5/span 2;
+    grid-column: 1/span 2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 18px;
+}
+.footer-social-links a{
+    color: black;
+    text-decoration: none;
+    font-size: 40px;
+}
+.footer-page-links{
+    border-bottom: 1px solid grey ;
+    grid-row: 7/span 3;
+    grid-column: 1/span 2;
+}
+.footer-page-links h3{
+    margin: 15px 10px;
+    font-weight: 600;
+}
+.pagelinks-container{
+    display: flex;
+    justify-content:space-evenly;
+    list-style: none;
+}
+.pagelinks-container a{
+    color: black;
+}
+
+.copyright{
+    grid-column: 1/span 2;
+    text-align: center;
+    margin-top: 5px;
+}
+@media only screen and (min-width: 800px){
+    .footer-container{
+        height: 50vh;
+    }
+    .show__less{
+        margin-bottom:20px ;
+        height: 20px;
+        overflow:hidden;
+    }
+    .show__more{
+        height: 70px;
+        margin-bottom:20px ;
+    }
+    .get--email {
+        grid-row: 3/span 2;
+        grid-column: 1/span 1;
+    }
+    .get--email button{
+        position: relative;
+        //display:block;
+        font-weight: 700;
+        font-size: 15px;
+        letter-spacing: 2px;
+        color: #383736;
+        text-transform: uppercase;
+        outline: 0;
+        overflow:hidden;
+        background: none;
+        z-index: 1;
+        cursor: pointer;
+        transition:         0.08s ease-in;
+        -o-transition:      0.08s ease-in;
+        -ms-transition:     0.08s ease-in;
+        -moz-transition:    0.08s ease-in;
+        -webkit-transition: 0.08s ease-in;
+    }
+
+    .get--email button:hover {
+    color: rgb(255, 255, 255);
+  }
+  .get--email button:before {
+    content: "";
+    position: absolute;
+    background: #383736;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    transition: top 0.09s ease-in;
+  }
+  
+    .get--email button:hover:before {
+        top: 0;
+    }
+  
+
+
+    .footer-social-links{
+        border-top: 1px solid grey ;
+        grid-row: 3 /span 3;
+        grid-column: 2/span 1;
+    }
+    .footer-page-links{
+        grid-row: 5 /span 4;
+        grid-column: 1 /span 2;
+    }
+}

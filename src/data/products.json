@@ -6,36 +6,44 @@
           "price": 15.99,
           "image": "img/Florist-thebirdsoutsidesang.jpg",
           "title":"The Birds Outside Song",
-          "tag":"florist"
+          "tag":"florist",
+          "keyword":"trending",
+          "highlight":true
         },
         { "id": 2,
             "artist": "Toro Y Moi",
             "genre":"indie",
             "price": 19.99,
-            "image": "img/220px-Roddy_Ricch_-_Please_Excuse_Me_for_Being_Antisocial.png",
+            "image": "img/toroymoijun2009.jpeg",
             "title":"June 2009",
-            "tag":"toro Y moi"
+            "tag":"toro Y moi",
+            "keyword":"trending",
+            "highlight":true
         },{ "id": 3,
             "artist": "Musa Masa",
             "genre":"pop",
             "price": 29.99,
             "image": "img/musamasaryc.jpg",
             "title":"NYC",
-            "tag":"musa masa"
+            "tag":"musa masa",
+            "keyword":"trending",
+            "highlight":true
         },{ "id": 4,
             "artist": "King Krule",
             "genre":"indie",
             "price": 20.55,
             "image": "img/kingkrulefirstalbum.jpg",
             "title":"6 Feet Beneath The Moon",
-            "tag":"king krule"
+            "tag":"king krule",
+            "highlight":true
         },{ "id": 5,
             "artist": "Toro Y Moi",
             "genre":"pop",
             "price": 9.99,
             "image": "img/outerpeaceToroymoi.jpg",
             "title":"Outer Peace",
-            "tag":"toro y moi"
+            "tag":"toro y moi",
+            "highlight":true
         },{ "id": 6,
             "artist": "Tame Impala",
             "genre":"pop",
