@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Highlight from './home/Highlight';
 import Content from './home/Content';
+import {NavLink} from 'react-router-dom';
 export default class Home extends Component{
     constructor(props){
         super(props);
@@ -41,7 +42,7 @@ export default class Home extends Component{
                     <div className="home-text-container">
                         <h1>Recently Released Albums</h1>
                             <div className="right--side--btn-container">
-                                <a href="#" id="right-side-btn">Shop All</a>
+                                <NavLink to="/all" exact  id="right-side-btn">Shop All</NavLink>
                             </div>
                     </div>
                     <div className="highlight-container" ref={this.highlightWindow}>

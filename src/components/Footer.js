@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {NavLink} from 'react-router-dom';
 
 export default class Footer extends Component{
     constructor(props){
@@ -50,9 +51,9 @@ export default class Footer extends Component{
                 <div className="footer-page-links">
                     <h3>Quick links</h3>
                     <ul className="pagelinks-container">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Products</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><NavLink to="/" exact >Home</NavLink></li>
+                        <li><NavLink to="/all" exact >Shop All</NavLink></li>
+                        <li><NavLink to="/contact" exact>contact</NavLink></li>
                     </ul>
                 </div>
                 <h5 className="copyright">© 2020 Harmony All Rights Reserved</h5>

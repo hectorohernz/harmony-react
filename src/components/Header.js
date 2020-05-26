@@ -1,5 +1,5 @@
 import React,{ Component} from 'react';
-
+import {NavLink} from 'react-router-dom';
 export default class Header extends Component{
     constructor(props){
         super(props);
@@ -52,13 +52,13 @@ export default class Header extends Component{
 
                 <div className={`moblie-nav-bar  ${this.state.styles[1]}`}>
                     <ul>
-                        <li className={`moblie__hover__nav moblie__active__nav current`}><a href="#">Home</a></li>
-                        <li className="moblie__hover__nav moblie__active__nav"><a href="#">Products</a></li>
-                        <li className="moblie__hover__nav moblie__active__nav"><a href="#">Contacts</a></li>
+                        <li className={`moblie__hover__nav moblie__active__nav`}><NavLink to="/" exact >Home</NavLink></li>
+                        <li className="moblie__hover__nav moblie__active__nav"><NavLink to="/all" exact >Shop All</NavLink></li>
+                        <li className="moblie__hover__nav moblie__active__nav"><NavLink to="/contact" exact>contact</NavLink></li>
                     </ul>
                 </div>
                 <div className={`${this.state.styles[0]}`}></div>
-                    <a href="#" ><img alt="Harmony Logo" src="img/style-images/harmonylogo.png" id="logo"/></a>
+                    <NavLink to="/" exact ><img alt="Harmony Logo" src="img/style-images/harmonylogo.png" id="logo"/></NavLink>
                 </nav>
             </header>
         )
