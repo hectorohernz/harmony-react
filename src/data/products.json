@@ -140,7 +140,7 @@
         },
         { "id": 18,
             "artist": "Conan",
-            "genre":"hip hop",
+            "genre":"indie",
             "price": 30.00,
             "image": "img/conancrow.jpg",
             "title":"Kidcrow",
