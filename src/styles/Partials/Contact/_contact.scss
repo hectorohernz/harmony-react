@@ -1,0 +1,68 @@
+.contact-container{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.contact-directions{
+    height: 90vh;
+    background: url('/img/ads/building-contact-form-page.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+.contact-form{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+    flex-direction: column;
+}
+.contact--header{
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom:25px;
+}
+.form-container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-container > label{
+    margin: 15px 0px;
+    font-size: 20px;
+}
+.form-container > input[type="text"],input[type="email"], textarea{
+    height: 30px;
+    border: black 2px solid;
+    padding: 5px;
+    font-size: 18px;
+    width: 70%;
+    border-radius: 6px;
+}
+.form-container > textarea{
+    height: 100px;
+}
+.form-container > input[type="submit"]{
+    font-size: 20px;
+    padding: 9px  70px;
+    margin-top: 30px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    background: black;
+}
+
+@media only screen and (min-width: 800px){
+    .contact-container{
+        flex-direction: row;
+    }
+    .contact-form{
+        width: 50%;
+    }
+    .contact-directions{
+        width: 50%;
+    }
+
+}
