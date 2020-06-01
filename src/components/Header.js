@@ -12,7 +12,6 @@ export default class Header extends Component{
         };
         this.hamburgerMenu =  this.hamburgerMenu.bind(this);
         this.antiDisplay = this.antiDisplay.bind(this);
-        this.scrollDisplay =  this.scrollDisplay.bind(this);
     }
     hamburgerMenu(){
         this.setState({ styles: [
@@ -23,23 +22,12 @@ export default class Header extends Component{
             , 'bottom-animate' // className='.bottom'
             , 'hamburger-animate' // className="..moblie-hamburger-icon"
         ], navMenu:true})
-      
-        console.log('HAS WORKED')
     }
     antiDisplay(){
         this.setState({navMenu:false,styles:[]})
     }
-            
-    scrollDisplay(){
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
-         console.log('Cheese')
-        }else{
-            console.log('Chips')
-        }
-    }
 
     render() {
-        window.onscroll = this.scrollDisplay();
 
         return (
             <header> 
@@ -49,13 +37,15 @@ export default class Header extends Component{
                     <span className={`bar middle ${this.state.styles[3]}`}></span>
                     <span className={`bar bottom ${this.state.styles[4]}`}></span>
                 </div>
-
                 <div className={`moblie-nav-bar  ${this.state.styles[1]}`}>
                     <ul>
                         <li className={`moblie__hover__nav moblie__active__nav`}><NavLink to="/" exact >Home</NavLink></li>
                         <li className="moblie__hover__nav moblie__active__nav"><NavLink to="/all" exact >Shop All</NavLink></li>
                         <li className="moblie__hover__nav moblie__active__nav"><NavLink to="/contact" exact>contact</NavLink></li>
                     </ul>
+                    <div className="shopping-chart">
+
+                    </div>
                 </div>
                 <div className={`${this.state.styles[0]}`}></div>
                     <NavLink to="/" exact ><img alt="Harmony Logo" src="img/style-images/harmonylogo.png" id="logo"/></NavLink>

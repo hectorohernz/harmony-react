@@ -19,7 +19,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 10;
+  z-index: 100;
   -webkit-box-shadow: 0 3px 3px -2px black;
           box-shadow: 0 3px 3px -2px black;
   display: flex;
@@ -32,7 +32,7 @@
 .moblie-nav-bar {
   display: block;
   position: fixed;
-  top: 70px;
+  top: 60px;
   right: 0;
   left: -100;
   height: 100%;
@@ -42,7 +42,7 @@
   transform: translate(100%);
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  z-index: 10;
+  z-index: 100;
 }
 
 .moblie-nav-bar a {
@@ -141,10 +141,10 @@
 .moblie__nav__backdrop {
   width: 100%;
   position: absolute;
-  top: 70px;
+  top: 60px;
   background: black;
   opacity: 80%;
-  z-index: 2;
+  z-index: 99;
   height: 100vh;
   display: block;
 }
@@ -152,6 +152,19 @@
 @media only screen and (min-width: 800px) {
   .nav--bar-container {
     height: 70px;
+  }
+  .moblie-nav-bar {
+    width: 100%;
+    height: 20%;
+  }
+  .moblie-nav-bar ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   #logo {
     height: 50px;
@@ -1303,6 +1316,38 @@
   border-top-right-radius: 50px;
 }
 
+.contact--content {
+  padding-top: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  height: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact--content h1 {
+  font-size: 75px;
+  padding-bottom: 20px;
+}
+
+.contact--content p {
+  font-weight: 500;
+  font-size: 20px;
+  margin: 10px 0px;
+}
+
+.contact--content span {
+  font-weight: 600;
+}
+
 .contact-form {
   height: 80vh;
   display: -webkit-box;
@@ -1371,6 +1416,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    height: 90vh;
   }
   .contact-form {
     width: 50%;
