@@ -90,7 +90,7 @@ export default class Filter extends Component{
                 </div>
 
                 <div className={this.state.filterModule ? 'fitler-based-genre' : 'fitler-none'}>
-                   <div className="form-container">
+                   <div className="filter-con">
                         <h2>Sort By</h2>
                         <div className="genre-form">
                             <input type="button"   onClick={(() =>  this.filterKey('hip hop', "hiphopBtn"))} value="Hip Hop" className={this.state.hiphopBtn ? 'active-filter-btn' :  'not-active-btn'}/>

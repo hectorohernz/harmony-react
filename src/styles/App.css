@@ -793,7 +793,6 @@
       grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: (1fr)[10];
       grid-template-rows: repeat(10, 1fr);
-  overflow: hidden;
 }
 
 .about-harmony {
@@ -1241,11 +1240,11 @@
   color: white;
 }
 
-.form-container {
+.filter-con {
   height: 85%;
 }
 
-.form-container h2 {
+.filter-con h2 {
   text-align: center;
 }
 
