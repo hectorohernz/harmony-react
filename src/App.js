@@ -17,7 +17,7 @@ class App extends Component{
       checkout:[]
       }
 
-};
+}; 
 
 render() {
   return (
