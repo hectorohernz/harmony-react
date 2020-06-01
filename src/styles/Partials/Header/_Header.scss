@@ -131,8 +131,7 @@
   width: 100%;
   position: absolute;
   top: 60px;
-  background: rgb(0, 0, 0);
-  opacity: 0.8 !important;
+  background: rgba(0, 0, 0,0.8);
   z-index: 99;
   height: 100vh;
   display: block;
