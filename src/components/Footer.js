@@ -42,10 +42,10 @@ export default class Footer extends Component{
 
 
                 <div className="footer-social-links">
-                    <a href="#"><i className="fab fa-facebook"></i></a>
-                    <a href="#"><i className="fab fa-spotify"></i></a>
-                    <a href="#"><i className="fab fa-soundcloud"></i></a>
-                    <a href="#"><i className="fab fa-instagram-square"></i></a>
+                    <a href="https://www.facebook.com/"><i className="fab fa-facebook"></i></a>
+                    <a href="https://www.spotify.com/us/"><i className="fab fa-spotify"></i></a>
+                    <a href="https://soundcloud.com/"><i className="fab fa-soundcloud"></i></a>
+                    <a href="https://www.instagram.com/"><i className="fab fa-instagram-square"></i></a>
                 </div>
 
                 <div className="footer-page-links">

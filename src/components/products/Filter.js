@@ -51,7 +51,6 @@ export default class Filter extends Component{
         if(this.state.highBtn){
             alert("Only Choose One Price Filter");
         } else{
-
                 this.setState({lowBtn:true});
             if(this.state.hiphopBtn || this.state.indieBtn || this.state.popBtn || this.state.rockBtn ){
                 this.state.filterProducts.sort( (a,b) => a.price - b.price)

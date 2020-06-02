@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 
 export default class Contact extends Component{
-    constructor(props){
-        super(props);
-        
-    }
     render() {
         // ADD FUNCTION WITH STATE AND VERFECTION
         return (

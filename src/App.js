@@ -6,6 +6,7 @@ import Home from './components/Home'
 import Footer from './components/Footer';
 import Products from './components/Products';
 import Contact from './components/Contact';
+import AlertUser from './components/alerts/AlertUser';
 
 import {Route, Switch} from 'react-router-dom';
 
@@ -27,6 +28,7 @@ render() {
         <Route exact render={() => <Home data={this.state.products}/>} path="/" />
         <Route exact render={() => <Products data={this.state.products}/>} path="/all" />
         <Route exact render={() => <Contact />} path="/contact"/>
+        <Route render={ () => <AlertUser />} path='*'/>
       </Switch>
       <Footer/>
     </>

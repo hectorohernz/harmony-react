@@ -52,7 +52,7 @@ export default class Home extends Component{
                         <button className="left-slide slide-btn" onClick={this.scrollLeft}><i className="fas fa-chevron-right"></i></button>
                     </div>
                 </article>
-                <Content/> {/* Need To Add Routing Links To Page */}
+                <Content/> 
             </section>
         )
     }
