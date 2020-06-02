@@ -36,10 +36,11 @@ export default class Footer extends Component{
                     {toggleBtn}
                 </div>
 
-                <div className="get--email">
-                 <button><i className="fas fa-envelope"></i> Get Email</button>
-                </div>
-
+           
+                    <div className="get--email">
+                        <button><i className="fas fa-envelope"></i> Get Email</button>
+                    </div>
+              
 
                 <div className="footer-social-links">
                     <a href="https://www.facebook.com/"><i className="fab fa-facebook"></i></a>
@@ -52,7 +53,7 @@ export default class Footer extends Component{
                     <h3>Quick links</h3>
                     <ul className="pagelinks-container">
                         <li><NavLink to="/" exact >Home</NavLink></li>
-                        <li><NavLink to="/all" exact >Shop All</NavLink></li>
+                        <li><NavLink to="/product" exact >Shop All</NavLink></li>
                         <li><NavLink to="/contact" exact>contact</NavLink></li>
                     </ul>
                 </div>

@@ -26,7 +26,7 @@ render() {
       <Header checkout={this.state.checkout}/>
       <Switch>
         <Route exact render={() => <Home data={this.state.products}/>} path="/" />
-        <Route exact render={() => <Products data={this.state.products}/>} path="/all" />
+        <Route  render={() => <Products data={this.state.products}/>} path="/product" />
         <Route exact render={() => <Contact />} path="/contact"/>
         <Route render={ () => <AlertUser />} path='*'/>
       </Switch>

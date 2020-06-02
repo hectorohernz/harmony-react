@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
 import Filter from './products/Filter';
 import ItemCon from './products/ItemCon';
-
+import {
+    Switch,
+    Route
+  } from "react-router-dom";
+  import ItemModel  from './products/ItemModule';
 export default class Products extends Component{
     constructor(props){
         super(props);
         this.state = {
-            products: this.props.data
+            products: this.props.data,
+            itemMod:false
         }
         this.filterProduct = this.filterProduct.bind(this);
       
@@ -30,8 +35,6 @@ export default class Products extends Component{
         }
     }
 
-    
-
 
     render() {
         return (
@@ -40,10 +43,14 @@ export default class Products extends Component{
 
                 <div className="products__grid__columns">
                     {this.state.products.map( item => (
-                        <ItemCon key={item.id} title={item.title} img={item.image} price={item.price} artist={item.artist}  />
+                        <ItemCon key={item.id}  id={item.id}title={item.title} img={item.image} price={item.price} artist={item.artist}  />
                     ))}
                 </div>
-
+                <Switch>
+                <Route exact path={`/product/:topicId`}>
+                     <ItemModel data={this.state.products} />
+                </Route>
+            </Switch>
             </section>
         )
     }

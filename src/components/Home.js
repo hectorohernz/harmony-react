@@ -42,7 +42,7 @@ export default class Home extends Component{
                     <div className="home-text-container">
                         <h1>Recently Released Albums</h1>
                             <div className="right--side--btn-container">
-                                <NavLink to="/all" exact  id="right-side-btn">Shop All</NavLink>
+                                <NavLink to="/product" exact  id="right-side-btn">Shop All</NavLink>
                             </div>
                     </div>
                     <div className="highlight-container" ref={this.highlightWindow}>

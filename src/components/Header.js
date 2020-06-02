@@ -40,7 +40,7 @@ export default class Header extends Component{
                 <div className={`moblie-nav-bar  ${this.state.styles[1]}`}>
                     <ul>
                         <li className={`moblie__hover__nav moblie__active__nav`}><NavLink to="/" exact >Home</NavLink></li>
-                        <li className="moblie__hover__nav moblie__active__nav"><NavLink to="/all" exact >Shop All</NavLink></li>
+                        <li className="moblie__hover__nav moblie__active__nav"><NavLink to="/product" exact >Shop All</NavLink></li>
                         <li className="moblie__hover__nav moblie__active__nav"><NavLink to="/contact" exact>contact</NavLink></li>
                     </ul>
                     <div className="shopping-chart">
@@ -48,7 +48,7 @@ export default class Header extends Component{
                     </div>
                 </div>
                 <div className={`${this.state.styles[0]}`}></div>
-                    <NavLink to="/" exact ><img alt="Harmony Logo" src="img/style-images/harmonylogo.png" id="logo"/></NavLink>
+                    <NavLink to="/" exact ><img alt="Harmony Logo" src="/img/style-images/harmonylogo.png" id="logo"/></NavLink>
                 </nav>
             </header>
         )

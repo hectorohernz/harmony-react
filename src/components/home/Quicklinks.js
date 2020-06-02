@@ -4,7 +4,7 @@ export default class Quicklinks extends Component{
     render() {
         return (
             <div className={`content-format content-${this.props.genreStyle}`}>
-                <NavLink exact to="/all">
+                <NavLink exact to="/product">
                     <div className="content-links">
                       <h2>{this.props.genre}</h2>
                       <h6>Shop Now <i className="fas fa-arrow-right"></i></h6>
