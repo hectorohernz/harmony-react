@@ -13,20 +13,34 @@ class ItemMod extends Component{
     renderitem(){
         let data = this.props.data;
         let item = data.filter(album => album.id === Number(this.props.match.params.topicId));
-        console.log(item[0]);
         return item[0];
-    }
+    };
+
+    
+
     render() {
-        return (
-            <section className="item-container">
-            <NavLink to="/product"><i class="fas fa-arrow-circle-left"></i></NavLink>
+        let content = null;
+        if(this.state.item === undefined){
+            content = (<div className='error-message'>
+                <h1>Item Cannot Be Found</h1>
+                <h2>404</h2>
+                <p>Sorry :(</p>
+            </div>)
+        } else{
+            content = ( 
                 <div className="item-content">
                     <h1>{this.state.item.artist}</h1>
                     <h2>{this.state.item.title}</h2>
                     <img src={`/${this.state.item.image}`} alt={this.state.item.title} />
                     <h3>${this.state.item.price}</h3>
                     <button>Add To Cart</button>
-                </div>
+                </div>)
+
+        };
+        return (
+            <section className="item-container">
+            <NavLink to="/product"><i className="fas fa-arrow-circle-left"></i></NavLink>
+            {content}
             </section>
         )
     }

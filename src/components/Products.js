@@ -35,7 +35,6 @@ export default class Products extends Component{
         }
     }
 
-
     render() {
         return (
             <section className="product-container">

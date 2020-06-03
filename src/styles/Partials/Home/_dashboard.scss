@@ -12,12 +12,12 @@
   padding: 0px 25px;
   height: 300px;
   overflow-y: hidden;
-  overflow-x: hidden;
+  overflow-x: scroll;
   }
 
 
   .highlight-container button{
-    display: block;
+    display: none;
   }
 
   .slide-btn{
