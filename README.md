@@ -1,5 +1,5 @@
-# Harmony E-Commerce Web Applcation
-
+# Harmony React Applcation
+Harmony is an e-commerce store that sells vinyl records. From modern to vintage music. The application was created to create a React app. A framework created by Facebook. So the website is made up of smaller components, which allows for better user experience. Components are like ingredients in a Hamburger, each piece gets its own treatment before being assembled, and components allow for live time rerendering without reloading the website. I have created three main pages, Home, Products, and Contact Us, which each have their own route created with React Router.
 
 
 ## Getting Started 
