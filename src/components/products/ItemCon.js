@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
 import {NavLink} from 'react-router-dom';
 
+/*
+    Item Container component is used to create each container which contains the data from the json file.
+    - Img
+    - Album Title
+    - Artist
+    - Price
+*/
 
 export default class ItemCon extends Component{
     render() {    

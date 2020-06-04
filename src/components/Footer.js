@@ -23,6 +23,9 @@ export default class Footer extends Component{
     }
 
     render() {
+        {/*
+            toggleBtn is keeping track of which button gets shown to the use. 
+        */}
         let toggleBtn = (this.state.showMoreToggle ?  
                         <button onClick={this.toggleNoShow}>Show Less</button> 
                         :  <button onClick={this.toggleShow}> Show More</button>  )

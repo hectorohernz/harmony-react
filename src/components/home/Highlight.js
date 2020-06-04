@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-
+/*
+    The highlight component is used for the Home Page dashboard.
+*/ 
 export default class highlight extends Component {
     render() {
         return (

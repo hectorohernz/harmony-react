@@ -3,7 +3,10 @@ import {NavLink} from 'react-router-dom';
 export default class Header extends Component{
     constructor(props){
         super(props);
+        // This.navBar is being access directly by the createRef();
+        // Which provides a way to access the DOM NODE directly 
         this.navBar = React.createRef();
+
         this.state = {
             navMenu:false,
             styles:[],
@@ -13,6 +16,7 @@ export default class Header extends Component{
         this.hamburgerMenu =  this.hamburgerMenu.bind(this);
         this.antiDisplay = this.antiDisplay.bind(this);
     }
+    // Adding those hamburger styles to the screen once clicked on.
     hamburgerMenu(){
         this.setState({ styles: [
             'moblie__nav__backdrop'// Style for backdrop opticy className=".moblie-hamburger-icon"
@@ -23,6 +27,8 @@ export default class Header extends Component{
             , 'hamburger-animate' // className="..moblie-hamburger-icon"
         ], navMenu:true})
     }
+
+    // Clearing those styles and changing navMenu status
     antiDisplay(){
         this.setState({navMenu:false,styles:[]})
     }

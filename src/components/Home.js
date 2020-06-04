@@ -3,15 +3,23 @@ import Highlight from './home/Highlight';
 import Content from './home/Content';
 import {NavLink} from 'react-router-dom';
 export default class Home extends Component{
+
     constructor(props){
         super(props);
+        // Allows a to access the DOM nodes and created in the render method.
         this.highlightWindow = React.createRef();
+        
         this.state = {
+            // highlight will contain all of those objects in the array which contain highlight === true sorted and provided by the function 
             highlight: this.sortHighlight()
         }
         this.scrollLeft = this.scrollLeft.bind(this);
         this.scrollRight = this.scrollRight.bind(this);
     }
+    /* 
+        Filtering all of the objects which contain the property of highlight which is set to true;
+        and returning the new array to the state.
+    */
     sortHighlight(){
         let products =  this.props.data;
         let highlight = products.filter( products => 

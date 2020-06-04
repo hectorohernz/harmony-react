@@ -9,7 +9,11 @@ class ItemMod extends Component{
         };
         this.renderitem = this.renderitem.bind(this);
     };
-    
+    /*
+        - RenderItem has the data props
+        - Data is being filtered based on the params from the route /products/topicId
+        - once filtered it is returned back into the state 
+    */
     renderitem(){
         let data = this.props.data;
         let item = data.filter(album => album.id === Number(this.props.match.params.topicId));
@@ -19,6 +23,10 @@ class ItemMod extends Component{
     
 
     render() {
+      // Catching an errors, such as an invaild route. /product/invaild.
+      // if the state returns undefined 
+      // Cannot return 0 length of array
+      // else display content 
         let content = null;
         if(this.state.item === undefined){
             content = (<div className='error-message'>

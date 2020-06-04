@@ -4,13 +4,12 @@ export default class Filter extends Component{
     constructor(props){
         super(props);
         this.state = {
-            filterModule:false,
-            filterProducts: [],
-            clearFilter:false,
+            filterModule:false, // Keep track if the filter button has been clicked on
+            filterProducts: [], // Array for filtered products
+            clearFilter:false, // Keep track if the clear filter has been activated 
             hiphopBtn:false, indieBtn:false, popBtn:false, rockBtn:false, lowBtn:false, highBtn:false // Genre Btn for filter and styles
-            ,promptUser:false
         }
-        this.showFilter =  this.showFilter.bind(this);
+        this.showFilter =  this.showFilter.bind(this); // 
         this.hiddenFilter =  this.hiddenFilter.bind(this);
         this.filterKey = this.filterKey.bind(this);
         this.handleFilter =  this.handleFilter.bind(this);
@@ -19,7 +18,9 @@ export default class Filter extends Component{
         this.filterHighToLow = this.filterHighToLow.bind(this);
 
     }
+
     handleFilter(){
+         // handles reseting initial by sending all data back
        if(this.state.clearFilter){
         this.props.filterProduct(this.props.data)
        } else{
@@ -27,32 +28,34 @@ export default class Filter extends Component{
        }
     }
 
-    showFilter(){
+    showFilter(){ // activates the display of the filter 
         this.setState({filterModule:true});
     }
 
-    hiddenFilter(){
+    hiddenFilter(){  // Onclick of the done button the data will get sent to the products page if filter and change th state to close
         this.handleFilter();
         this.setState({filterModule:false});
     };
 
-    filterKey(keyword,filterBtn){
-        this.setState({ [filterBtn]:true });
-        const filtered = this.props.data.filter( el => el.genre === keyword );
-        this.setState({filterProducts:this.state.filterProducts.concat(filtered), clearFilter:false});
-        console.log(filtered);
+    filterKey(keyword,filterBtn){ 
+        // keyword is the used to define the type of genre 
+        // filterBtn is the state of button that has been actived which will change the style 
+        this.setState({ [filterBtn]:true }); // Once set to true the button will add a black style 
+        const filtered = this.props.data.filter( el => el.genre === keyword ); // creates a new array from data. For objects which contain the keyword
+        this.setState({filterProducts:this.state.filterProducts.concat(filtered), clearFilter:false}); // Concat with the function is making it multipe purpose for future arrays  
     }
 
     handleClearFilter(){
-      this.setState({clearFilter: true, filterProducts:[],hiphopBtn:false, indieBtn:false, popBtn:false, rockBtn:false, lowBtn:false, highBtn:false})
+      this.setState({clearFilter: true, filterProducts:[],hiphopBtn:false, indieBtn:false, popBtn:false, rockBtn:false, lowBtn:false, highBtn:false}) // Hanles the clear filter which styles back to normal.
     }
 
     filterLowToHigh(){
-        if(this.state.highBtn){
+        if(this.state.highBtn){ // Only allowing one filter to be 
             alert("Only Choose One Price Filter");
         } else{
-                this.setState({lowBtn:true});
-            if(this.state.hiphopBtn || this.state.indieBtn || this.state.popBtn || this.state.rockBtn ){
+                this.setState({lowBtn:true}); // Chnanges the button state to true 
+
+            if(this.state.hiphopBtn || this.state.indieBtn || this.state.popBtn || this.state.rockBtn ){ // Chnanges the button state to true 
                 this.state.filterProducts.sort( (a,b) => a.price - b.price)
             } else{
                 this.props.data.sort( (a,b) => 
@@ -64,12 +67,12 @@ export default class Filter extends Component{
     };
 
     filterHighToLow(){
-        if(this.state.lowBtn){
+        if(this.state.lowBtn){ // Only allowing one filter to be  Checking if the low-high filter is active 
             alert("Only Choose One Price Filter");
         } else{
             this.setState({highBtn:true});
             if(this.state.hiphopBtn || this.state.indieBtn || this.state.popBtn || this.state.rockBtn ){
-                this.state.filterProducts.sort( (a,b) => b.price - a.price )
+                this.state.filterProducts.sort( (a,b) => b.price - a.price ) 
             } else{
                 this.props.data.sort( (a,b) => 
                     b.price - a.price 

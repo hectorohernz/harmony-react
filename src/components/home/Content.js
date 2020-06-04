@@ -5,6 +5,7 @@ export default class Content extends Component{
     constructor(props){
         super(props);
         this.state = {
+            /* State for passing in content quick-links in the home page.*/
             cms:[
                 {name:'Hip Hop',style:'hiphop',link:"#", id:uuidv4()},
                 {name:'Indie',style:'indie',link:"#", id:uuidv4()},

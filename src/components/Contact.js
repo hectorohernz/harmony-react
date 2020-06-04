@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 export default class Contact extends Component{
     render() {
-        // ADD FUNCTION WITH STATE AND VERFECTION
+        // Very Basic Form validation with javascript
         return (
             <section className="contact-container">
                 <div className="contact-directions">
