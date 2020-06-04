@@ -8,7 +8,12 @@
           "title":"The Birds Outside Song",
           "tag":"florist",
           "keyword":"trending",
-          "highlight":true
+          "highlight":true,
+          "content":{
+                "link":"audio/Florist __ Vacation.mp3",
+                "title": "Vacation",
+                "description": "The Birds Outside Sang is an album about the speed at which rain falls, life goes on, and people grow. It's one part a personal, autobiographical, and almost completely chronological telling of a time in my life full of confusion, physical + emotional pain, loneliness, and hope."
+          }
         },
         { "id": 2,
             "artist": "Toro Y Moi",
@@ -18,7 +23,12 @@
             "title":"June 2009",
             "tag":"toro Y moi",
             "keyword":"trending",
-            "highlight":true
+            "highlight":true,
+            "content":{
+                  "link":"audio/ToroYMoi__June2009.mp3",
+                  "title": "Dead Pontoon",
+                  "description": "Chaz Bundick reached into his archives for this collection of singles written around the time of his debut, Causers of This. It allows you to think big picture not only about Bundick, but the role of production and atmosphere in general."
+            }
         },{ "id": 3,
             "artist": "Musa Masa",
             "genre":"pop",
@@ -27,7 +37,12 @@
             "title":"NYC",
             "tag":"musa masa",
             "keyword":"trending",
-            "highlight":true
+            "highlight":true,
+            "content":{
+                  "link":"audio/Mura-Masa-Ellie Rowsell, Wolf Alice-Teenage Headache-Dreams.mp3",
+                  "title": "Teenage Headache Dreams",
+                  "description": "R.Y.C. is the second studio album by Guernsey-born music producer Alex Crossan, under his alias Mura Masa. It was released on 17 January 2020 by Polydor Records and Anchor Point Records. The album has guest features by Clairo, Slowthai, Tirzah and Ellie Rowsell."
+            }
         },{ "id": 4,
             "artist": "King Krule",
             "genre":"indie",
@@ -35,7 +50,12 @@
             "image": "img/kingkrulefirstalbum.jpg",
             "title":"6 Feet Beneath The Moon",
             "tag":"king krule",
-            "highlight":true
+            "highlight":true,
+            "content":{
+                  "link":"audio/KingKrule-sixfeet.mp3",
+                  "title": "Easy Easy",
+                  "description": "Armed with a blood-freezing voice, the 19-year-old Londoner Archy Marshall recorded his haunting early songs on a malfunctioning laptop, first as Zoo Kid then as King Krule. His Rodaidh McDonald-produced debut for True Panther/XL sounds roomier and warmer, but it's the same chipped-brick urban landscape Marshall prowled through on his previous work."
+            }
         },{ "id": 5,
             "artist": "Toro Y Moi",
             "genre":"pop",
@@ -43,21 +63,36 @@
             "image": "img/outerpeaceToroymoi.jpg",
             "title":"Outer Peace",
             "tag":"toro y moi",
-            "highlight":true
+            "highlight":true,
+            "content":{
+                  "link":"audio/outer-peace-toroymoi.mp3",
+                  "title": "Monte Carlo",
+                  "description": "Outer Peace is the sixth studio album by American musician Toro y Moi, released on January 18, 2019, through Carpark Records. The tracks Freelance and Ordinary Pleasure were released prior to the album. On January 10, the album became available to stream in full via NPR's website."
+            }
         },{ "id": 6,
             "artist": "Tame Impala",
             "genre":"pop",
             "price": 35.00,
             "image": "img/lornerismtama.jpg",
             "title":"Lonerism",
-            "tag":"tame impala"
+            "tag":"tame impala",
+            "content":{
+                  "link":"audio/tame-impala-lonerism.mp3",
+                  "title": "elephant",
+                  "description": "Outer Peace is the sixth studio album by American musician Toro y Moi, released on January 18, 2019, through Carpark Records. The tracks Freelance and Ordinary Pleasure were released prior to the album. On January 10, the album became available to stream in full via NPR's website."
+            }
         },{ "id": 7,
             "artist": "Tyler The Creator",
             "genre":"pop",
             "price": 22.00,
             "image": "img/Igor_-_Tyler,_the_Creator.jpg",
             "title":"Igor",
-            "tag":"tyler the creator"
+            "tag":"tyler the creator",
+            "content":{
+                  "link":"audio/PUPPET - Tyler, The Creator.mp3",
+                  "title": "PUPPET",
+                  "description": "Igor is the fifth studio album by American rapper Tyler, the Creator, released on May 17, 2019, through A Boy is a Gun and distributed by Columbia Records. Produced entirely by Tyler, the album follows the 2017 release of Flower Boy."
+            }
         },
         { "id": 8,
             "artist": "Mac Miller",
@@ -65,7 +100,12 @@
             "price": 19.00,
             "image": "img/macmillercircles.jpg",
             "title":"Circles",
-            "tag":"mac miller"
+            "tag":"mac miller",
+            "content":{
+                  "link":"audio/Macmiller-Good News.mp3",
+                  "title": "Good News",
+                  "description": "Circles is the sixth studio album by American rapper and singer Mac Miller. It was released posthumously on January 17, 2020, by Warner Records, and was being worked on by Miller before his death in September 2018."
+            }
         },
         { "id": 9,
             "artist": "Jackboys",
@@ -73,7 +113,12 @@
             "price": 25.00,
             "image": "img/jackboysandtravisscott.png",
             "title":"Jackboys",
-            "tag":"jackboys"
+            "tag":"jackboys",
+            "content":{
+                  "link":"audio/JACKBOYS, Travis Scott - WHAT TO DO (Audio) ft. Don Toliver.mp3",
+                  "title": "What To Do",
+                  "description": "JackBoys is a compilation album by JackBoys and American rapper Travis Scott. JackBoys is a collective and group of American rappers signed to Scott's Cactus Jack Records, which is made up of Scott himself, Sheck Wes, Don Toliver, Luxury Tax, and Scott's DJ Chase B. The album was released on December 27, 2019."
+            }
         },
         { "id": 10,
             "artist": "Kanye West ",
@@ -81,7 +126,12 @@
             "price": 19.99,
             "image": "img/kanye-west-ye-album.jpg",
             "title":"Ye",
-            "tag":"kanye west"
+            "tag":"kanye west",
+            "content":{
+                  "link":"audio/Kanye West - Violent Crimes.mp3",
+                  "title": "Violent Crimes",
+                  "description": "Ye is the eighth studio album by American rapper and producer Kanye West. It was released on June 1, 2018, through GOOD Music and distributed by Def Jam Recordings."
+            }
         },
         { "id": 11,
             "artist": "Lil Uzi Vert",
@@ -89,7 +139,12 @@
             "price": 30.00,
             "image": "img/Eternal_Atake_Lil_Uzi_Vert.jpg",
             "title":"Eternal Atake",
-            "tag":"lil uzi vert"
+            "tag":"lil uzi vert",
+            "content":{
+                  "link":"audio/Kanye West - Violent Crimes.mp3",
+                  "title": "Violent Crimes",
+                  "description": "Ye is the eighth studio album by American rapper and producer Kanye West. It was released on June 1, 2018, through GOOD Music and distributed by Def Jam Recordings."
+            }
         },
         { "id": 12,
             "artist": "Halsey",
@@ -97,7 +152,12 @@
             "price": 12.99,
             "image": "img/Halsey_-_Manic.png",
             "title":"Manic",
-            "tag":"halsey"
+            "tag":"halsey",
+            "content":{
+                  "link":"audio/Halsey-I'mNotMad.mp3",
+                  "title": "I'm Not Mad",
+                  "description": "Manic is the third studio album by American singer Halsey. It was released on January 17, 2020 through Capitol Records. It was preceded by the release of three singles: “Without Me”, “Graveyard”, and “You Should Be Sad” and features guest appearances by Dominic Fike, Alanis Morissette, and Suga of BTS."
+            }
         },
         { "id": 13,
             "artist": "Dominic Fike",
@@ -105,7 +165,12 @@
             "price": 25.00,
             "image": "img/dominicfikedontforgetaboutmedemos.jpg",
             "title":"Don't Forget About Me",
-            "tag":"dominic fike"
+            "tag":"dominic fike",
+            "content":{
+                  "link":"audio/dominic-fike-3-nights.mp3",
+                  "title": "3 Nights",
+                  "description": "Don't Forget About Me, Demos is the debut EP by American singer and rapper Dominic Fike, released on October 16, 2018 through Columbia."
+            }
         },
         { "id": 14,
             "artist": "Drake & Future",
@@ -113,7 +178,12 @@
             "price": 14.99,
             "image": "img/drake-future-watba.jpg",
             "title":"What A Time To Be Alive",
-            "tag":"drake future"
+            "tag":"drake future",
+            "content":{
+                  "link":"audio/Drake & Future -diamondsbedancing.mp3",
+                  "title": "Diamond Dancing",
+                  "description": "What a Time to Be Alive is a collaborative commercial mixtape by Canadian rapper Drake and American rapper Future. It was released on September 20, 2015."
+            }
         },
         { "id": 15,
             "artist": "Bon Iver",
@@ -121,14 +191,24 @@
             "price": 20.00,
             "image": "img/Bon_iver_album_cover_forever_emma.jpg",
             "title":"Forever Emma",
-            "tag":"bon iver"
+            "tag":"bon iver",
+            "content":{
+                  "link":"audio/bon-iver-holscene.mp3",
+                  "title": "holocene",
+                  "description": "For Emma, Forever Ago is the debut studio album by American indie folk band Bon Iver. It was first self-released in July 2007, and later saw wide release on the Jagjaguwar label in February 2008. "
+            }
         }, { "id": 16,
             "artist": "Brockhampton",
             "genre":"hip hop",
             "price": 25.00,
             "image": "img/Brockhampton_-_Iridescence.png",
             "title":"Iridescence",
-            "tag":"brockhampton"
+            "tag":"brockhampton",
+            "content":{
+                  "link":"audio/brockhampton-WEIGHT.mp3",
+                  "title": "Weight",
+                  "description": "Iridescence is the fourth studio album by American rap collective and boy band Brockhampton, released on September 21, 2018 by Question Everything, Inc. RCA Records. "
+            }
         },
         { "id": 17,
             "artist": "Dababy",
@@ -136,7 +216,12 @@
             "price": 12.00,
             "image": "img/DaBaby_-_Kirk.png",
             "title":"Kirk",
-            "tag":"dababy"
+            "tag":"dababy",
+            "content":{
+                  "link":"",
+                  "title": "Weight",
+                  "description": "Iridescence is the fourth studio album by American rap collective and boy band Brockhampton, released on September 21, 2018 by Question Everything, Inc. RCA Records. "
+            }
         },
         { "id": 18,
             "artist": "Conan",
@@ -144,7 +229,12 @@
             "price": 30.00,
             "image": "img/conancrow.jpg",
             "title":"Kidcrow",
-            "tag":"conan"
+            "tag":"conan",
+            "content":{
+                  "link":"audio/Conan-Gray-Heather.mp3",
+                  "title": "Heather",
+                  "description": "Kid Krow is the debut studio album by American singer-songwriter Conan Gray. It was released on March 20, 2020, through Republic Records in the US, and Island Records in the UK. "
+            }
         },
         { "id": 19,
             "artist": "Queen",
@@ -152,7 +242,12 @@
             "price": 19.99,
             "image": "img/Queen_Hot_Space.png",
             "title":"Hot Space",
-            "tag":"queen"
+            "tag":"queen",
+            "content":{
+                  "link":"audio/Queen-Under-Pressure.mp3",
+                  "title": "Under Pressure",
+                  "description": "Hot Space is the tenth studio album by the British rock band Queen. It was released on 21 May 1982 by EMI Records in the UK and by Elektra Records in the US.  "
+            }
         }
 
     ]

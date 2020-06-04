@@ -23,13 +23,9 @@ export default class Footer extends Component{
     }
 
     render() {
-        {/*
-            toggleBtn is keeping track of which button gets shown to the use. 
-        */}
         let toggleBtn = (this.state.showMoreToggle ?  
                         <button onClick={this.toggleNoShow}>Show Less</button> 
                         :  <button onClick={this.toggleShow}> Show More</button>  )
-
         return (
             <footer className="footer-container">
 
@@ -38,13 +34,10 @@ export default class Footer extends Component{
                     <p className={this.state.showMoreToggle ? "show__more" : 'show__less'}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     {toggleBtn}
                 </div>
-
-           
                     <div className="get--email">
                         <button><i className="fas fa-envelope"></i> Get Email</button>
                     </div>
-              
-
+            
                 <div className="footer-social-links">
                     <a href="https://www.facebook.com/"><i className="fab fa-facebook"></i></a>
                     <a href="https://www.spotify.com/us/"><i className="fab fa-spotify"></i></a>

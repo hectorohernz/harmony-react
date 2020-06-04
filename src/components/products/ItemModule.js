@@ -1,6 +1,15 @@
 import React, { Component } from 'react';
 import { withRouter, NavLink } from "react-router-dom";
 
+
+/*
+    To DO List Today
+    [ ] - add description 
+    [ ] -  Add Data to json to route to mp3 files located in public/audio
+    [ ] - Add Audio Controls to the page 
+    [ ] - Add Description  To Page 
+    [ ] - Fix Styles
+*/
 class ItemMod extends Component{
     constructor(props){
         super(props);
@@ -36,14 +45,22 @@ class ItemMod extends Component{
             </div>)
         } else{
             content = ( 
+
                 <div className="item-content">
                     <h1>{this.state.item.artist}</h1>
                     <h2>{this.state.item.title}</h2>
                     <img src={`/${this.state.item.image}`} alt={this.state.item.title} />
-                    <h3>${this.state.item.price}</h3>
-                    <button>Add To Cart</button>
+                        <p className="item-song-title">{`Song:  ${this.state.item.content.title}`}</p>
+                        <audio controls>
+                            <source src={`/${this.state.item.content.link}`} type="audio/mpeg"/>
+                        Your browser does not support the audio element.
+                        </audio>
+                    <p className="item-description">{this.state.item.content.description}</p>
+                    <div className="item-price-content">
+                        <h3>${this.state.item.price}</h3>
+                        <button>Add To Cart</button>
+                    </div>
                 </div>)
-
         };
         return (
             <section className="item-container">

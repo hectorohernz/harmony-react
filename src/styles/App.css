@@ -1467,60 +1467,200 @@ button {
   height: 100vh;
   padding: 25px;
   position: fixed;
-  color: white;
-  background: black;
+  color: black;
+  background: #c1c1c1;
   top: 0px;
   width: 100vw;
   z-index: 100;
 }
 
 .item-container a {
-  color: white;
+  color: black;
   font-size: 50px;
   padding-left: 25px;
 }
 
 .item-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.item-content h1 {
-  margin-top: 25px;
-}
-
-.item-content h2 {
-  margin-bottom: 25px;
+  height: 90%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
+  -ms-grid-rows: (1fr)[8];
+      grid-template-rows: repeat(8, 1fr);
 }
 
 .item-content img {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  grid-row: 2 /span 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 8;
+  grid-column: 1/span 8;
   height: 300px;
-  margin: 50px 0px;
+  margin: auto;
 }
 
-.item-content button {
-  color: black;
-  margin: 15px 0px;
-  padding: 15px;
-  border-radius: 25px;
-  background: white;
-}
-
-.error-message {
-  margin-top: 50px;
+.item-song-title {
+  margin-top: 15px;
+  font-size: 20px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 8;
+  grid-column: 1/span 8;
+  -ms-grid-row: 5;
+  grid-row: 5;
   text-align: center;
-  font-size: 50px;
+}
+
+.item-content audio {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  -ms-grid-row: 5;
+  grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 8;
+  grid-column: 1/span 8;
+  height: 20px;
+  outline: none;
+}
+
+audio::-webkit-media-controls-panel {
+  background: grey;
+}
+
+.item-description {
+  margin: auto;
   padding: 0px 20px;
+  font-size: 15px;
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 2;
+  grid-row: 6 /span 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 8;
+  grid-column: 1/span 8;
+}
+
+.item-content h1, h2 {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 8;
+  grid-column: 1/span 8;
+  text-align: center;
+}
+
+.item-content h2 {
+  margin-top: 25px;
+}
+
+.item-price-content {
+  height: 100%;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 8;
+  grid-column: 1/span 8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item-price-content button {
+  background: white;
+  height: 40px;
+  width: 100px;
+  border-radius: 25px;
+}
+
+@media only screen and (min-width: 800px) {
+  .item-container a {
+    color: black;
+    font-size: 80px;
+    padding-left: 25px;
+  }
+  .item-content h1, h2 {
+    text-align: initial;
+  }
+  .item-content h1 {
+    margin: 0px;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 8;
+    grid-column: 2/span 8;
+    font-size: 50px;
+  }
+  .item-content h2 {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 8;
+    grid-column: 5/span 8;
+    margin: 0px;
+    font-size: 50px;
+  }
+  .item-content img {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 4;
+    grid-row: 2 /span 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/span 3;
+    height: 350px;
+  }
+  .item-song-title {
+    -ms-grid-row: 7;
+    grid-row: 7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/span 3;
+    font-size: 26px;
+    margin: auto;
+  }
+  .item-content audio {
+    margin: auto;
+    -ms-grid-row: 7;
+    grid-row: 7;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 4;
+    grid-column: 4/span 4;
+    height: 40px;
+    width: 90%;
+    outline: none;
+  }
+  .item-description {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
+    grid-row: 2/span 3;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 5;
+    grid-column: 4/span 5;
+    font-size: 35px;
+    background: white;
+    margin: 0px;
+    padding: 15px 25px;
+    border-radius: 25px;
+  }
+  .item-price-content {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 5;
+    grid-column: 4/span 5;
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 2;
+    grid-row: 5/span 2;
+  }
+  .item-price-content h3 {
+    font-size: 35px;
+  }
+  .item-price-content button {
+    font-size: 25px;
+    height: 50px;
+    width: 300px;
+  }
 }
 /*# sourceMappingURL=App.css.map */

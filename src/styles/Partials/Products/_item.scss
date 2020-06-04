@@ -3,43 +3,141 @@
     height: 100vh;
     padding: 25px;
     position: fixed;
-    color: white;
-    background: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    background: rgb(193, 193, 193);
     top: 0px;
     width: 100vw;
     z-index: 100;
 }
+
 .item-container a {
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 50px;
     padding-left: 25px;
 }
+
 .item-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.item-content h1{
-    margin-top: 25px;
-}
-.item-content h2{
-    margin-bottom:25px;
+    height: 90%;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,1fr);
 }
 .item-content img{
+    grid-row:2 /span 3;
+    grid-column: 1/span 8;
     height: 300px;
-    margin: 50px 0px;
+    margin: auto;
 }
-.item-content button{
-    color: black;
-    margin: 15px 0px;
-    padding: 15px;
-    border-radius: 25px;
-    background: white;
-}
-.error-message{
-    margin-top: 50px;
+.item-song-title{
+    margin-top: 15px;
+    font-size: 20px;
+    grid-column: 1/span 8;
+    grid-row: 5;
     text-align: center;
-    font-size: 50px;
-    padding:0px 20px;
+}
+
+.item-content audio{
+    margin-top: 50px;
+    margin-left:auto;
+    margin-right:auto;
+    grid-row: 5;
+    grid-column: 1/span 8;
+    height: 20px;
+    outline: none;
+}
+audio::-webkit-media-controls-panel{
+    background:grey;
+}
+.item-description{
+    margin: auto;
+    padding: 0px 20px;
+    font-size: 15px;
+    grid-row: 6 /span 2;
+    grid-column: 1/span 8;
+}
+.item-content h1,h2{
+    grid-row:1;
+    grid-column: 1/span 8;
+    text-align: center;
+}
+.item-content h2{
+    margin-top: 25px;
+}
+.item-price-content{
+    height: 100%;
+    grid-column: 1/span 8;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.item-price-content button{
+    background: white;
+    height: 40px;
+    width: 100px;
+    border-radius:25px;
+}
+@media only screen and (min-width: 800px){
+    .item-container a {
+        color: rgb(0, 0, 0);
+        font-size: 80px;
+        padding-left: 25px;
+    }
+    
+    .item-content h1,h2{
+        text-align: initial;
+    }
+
+    .item-content h1{
+        margin: 0px;
+        grid-row: 1;
+        grid-column: 2/span 8;
+        font-size: 50px;
+    }
+    .item-content h2{
+        grid-row: 1;
+        grid-column: 5/span 8;
+        margin: 0px;
+        font-size: 50px;
+    }
+    .item-content img{
+        grid-row:2 /span 4;
+        grid-column: 1/span 3;
+        height: 350px;
+    }
+    .item-song-title{
+        grid-row: 7;
+        grid-column: 1/span 3;
+        font-size: 26px;
+        margin: auto;
+        
+    }
+    .item-content audio{
+        margin: auto;
+        grid-row: 7;
+        grid-column: 4/span 4;
+        height: 40px;
+        width:90%;
+        outline: none;
+    }
+    .item-description{
+        grid-row: 2/span 3;
+        grid-column: 4/span 5;
+        font-size: 35px;
+        background: white;
+        margin: 0px;
+        padding: 15px 25px;
+        border-radius: 25px;
+    }
+    .item-price-content{
+        grid-column: 4/span 5;
+        grid-row: 5/span 2;
+    }
+    .item-price-content h3{
+        font-size: 35px;
+    }
+    .item-price-content button{
+        font-size: 25px;
+        height: 50px;
+        width: 300px;
+    }
 }
